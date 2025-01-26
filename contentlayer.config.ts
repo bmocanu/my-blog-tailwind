@@ -1,4 +1,4 @@
-import { defineDocumentType, ComputedFields, makeSource } from 'contentlayer2/source-files'
+import { defineDocumentType, ComputedFields, makeSource, defineNestedType } from 'contentlayer2/source-files'
 import { writeFileSync } from 'fs'
 import readingTime from 'reading-time'
 import { slug } from 'github-slugger'
@@ -93,12 +93,27 @@ function createSearchIndex(allBlogs) {
   }
 }
 
+export const Series = defineNestedType(() => ({
+  name: 'Series',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    order: {
+      type: 'number',
+      required: true,
+    },
+  },
+}))
+
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: 'blog/**/*.mdx',
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
+    series: { type: 'nested', of: Series },
     date: { type: 'date', required: true },
     tags: { type: 'list', of: { type: 'string' }, default: [] },
     lastmod: { type: 'date' },
