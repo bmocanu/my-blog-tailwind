@@ -1,0 +1,126 @@
+.prose {
+  font-size: 1.2rem;
+}
+
+/*  
+----------------------------------------------------------------------------------------------------
+Dark mode settings 
+---------------------------------------------------------------------------------------------------- 
+*/
+.dark\:hover\:bg-primary-400:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 221 29 / var(--tw-bg-opacity, 1));
+}
+.dark\:hover\:text-primary-400:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 221 29 / var(--tw-text-opacity, 1));
+}
+
+/* Link colors */
+a, button {
+  outline-color: #48a7ec;
+}
+a:focus-visible, button:focus-visible {
+  outline-color: #48a7ec;
+}
+.prose :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  color: #48a7ec;
+}
+.prose-invert :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  color: #48a7ec;
+}
+.dark\:prose-invert:is(.dark *) :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  color: #48a7ec;
+}
+
+/* Link hover colors */
+.prose :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) code {
+  color: rgb(255, 221, 29);
+}
+.prose-invert :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover {
+  color: rgb(255, 221, 29);
+}
+.prose-invert :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) code {
+  color: rgb(255, 221, 29);
+}
+.dark\:prose-invert:is(.dark *) :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover {
+  color: rgb(255, 221, 29);
+}
+.dark\:prose-invert:is(.dark *) :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) code {
+  color: rgb(255, 221, 29);
+}
+.prose :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover {
+  color: rgb(255, 221, 29);
+}
+
+/* Tag colors */
+.border-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(72 167 236 / var(--tw-border-opacity, 1));
+}
+.bg-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 167 236 / var(--tw-bg-opacity, 1));
+}
+.text-primary-500 {
+  --tw-text-opacity: 1;
+  color: rgb(72 167 236 / var(--tw-text-opacity, 1));
+}
+.hover\:text-primary-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity, 1));
+}
+.focus\:border-primary-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 72 153 / var(--tw-border-opacity, 1));
+}
+.focus\:ring-primary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(236 72 153 / var(--tw-ring-opacity, 1));
+}
+.dark\:hover\:text-primary-500:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 221 29 / var(--tw-text-opacity, 1));
+}
+
+/* Doc search */
+/*
+.light .DocSearch {
+  --docsearch-primary-color: rgb(255, 221, 29);
+  --docsearch-highlight-color: rgb(255, 221, 29);
+  --docsearch-searchbox-shadow: inset 0 0 0 2px rgb(255, 221, 29);
+}
+.dark .DocSearch {
+  --docsearch-primary-color: rgb(255, 221, 29);
+  --docsearch-highlight-color: rgb(255, 221, 29);
+  --docsearch-searchbox-shadow: inset 0 0 0 2px rgb(255, 221, 29);
+}
+*/
+
+/*  
+----------------------------------------------------------------------------------------------------
+Light mode settings 
+---------------------------------------------------------------------------------------------------- 
+*/
+.bg-primary-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 120 159 / var(--tw-bg-opacity, 1));
+}
+.text-primary-600 {
+  --tw-text-opacity: 1;
+  color: rgb(255 221 29 / var(--tw-text-opacity, 1));
+}
+.hover\:text-primary-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 221 29 / var(--tw-text-opacity, 1));
+}
+.focus\:ring-primary-600:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 221 29 / var(--tw-ring-opacity, 1));
+}
+
+/*  
+----------------------------------------------------------------------------------------------------
+Dark andLight mode settings 
+---------------------------------------------------------------------------------------------------- 
+*/
